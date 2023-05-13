@@ -1,0 +1,275 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: iransans;
+  direction: rtl;
+  background: rgb(195, 252, 190);
+  background: radial-gradient(circle, rgba(195, 252, 190, 1) 0%, rgba(255, 255, 255, 0) 51%);
+}
+
+
+
+
+p {
+  line-height: 30px;
+}
+
+body {}
+
+
+
+
+@font-face {
+  font-family: "Iransans";
+  src: url("./fonts/ir_sans.ttf");
+  src: url("./iransans/IRANSans\(FaNum\).ttf");
+
+}
+
+a {
+  text-decoration: none;
+
+}
+
+.addbtn {
+  background-color: #78BD09;
+  width: 110px;
+  font-size: 14px;
+  font-weight: 500;
+  margin: auto;
+}
+
+
+
+
+
+.productbox {
+  background-color: #FFFFFF;
+  padding: 16px 16px 0 16px;
+  align-items: center;
+  border-radius: 0;
+  box-shadow: -1px -1px 20px 0px #88888842;
+  width: 100%;
+  height: fit-content;
+  border: 0;
+}
+
+
+
+
+
+
+/*-- The Magic --*/
+#menu-toggle:checked~.slideout-sidebar {
+  left: 0px;
+}
+
+#menu-toggle:checked+.menu-icon {
+  left: 210px;
+}
+
+#menu-toggle:checked~.content-container {
+  padding-left: 190px;
+}
+
+
+
+@media (max-width: 767px) {
+
+  .content-container {
+    max-width: 100%;
+    margin: 30px auto 0;
+  }
+
+
+  /* -- Slideout Sidebar -- */
+
+  .slideout-sidebar {
+    position: fixed;
+    top: 0;
+    left: -190px;
+    z-index: 10;
+    width: 150px;
+    height: 100%;
+    padding: 20px;
+    background-color: #323232;
+    transition: all 300ms ease-in-out;
+  }
+
+  .slideout-sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .slideout-sidebar ul li {
+    cursor: pointer;
+    padding: 18px 0;
+    border-bottom: 1px solid rgba(244, 244, 244, 0.4);
+    color: rgba(244, 244, 244, 0.7);
+  }
+
+  .slideout-sidebar ul li:last-child {
+    border-bottom: 0;
+  }
+
+  .slideout-sidebar ul li:hover {
+    color: rgba(244, 244, 244, 1);
+  }
+
+  /* -- Menu Icon -- */
+
+  #menu-toggle {
+    display: none;
+  }
+
+  .menu-icon {
+    position: absolute;
+    top: 18px;
+    /* left: 0px; */
+    font-size: 24px;
+    z-index: 1;
+    transition: all 300ms ease-in-out;
+  }
+
+  #menu-toggle:checked~.content-container {
+    padding-left: 0;
+  }
+
+  .slideout-sidebar ul {
+    text-align: center;
+    max-width: 200px;
+    margin: 30px auto 0;
+  }
+
+  .menu-icon {
+    left: 20px
+  }
+
+  #menu-toggle:checked~.slideout-sidebar {
+    width: 100%;
+  }
+
+  #menu-toggle:checked+.menu-icon {
+    left: 87%;
+    color: #fafafa;
+  }
+
+  @media screen and (max-width: 736px) and (orientation: landscape) {
+
+    .slideout-sidebar {
+      padding: 0;
+    }
+
+    .slideout-sidebar ul {
+      max-width: 100%;
+      margin: 60px auto 0;
+    }
+
+    .slideout-sidebar ul li {
+      display: inline-block;
+      border-bottom: 0;
+      width: 72px;
+      padding: 18px 24px;
+      margin: 0 6px 12px;
+      color: #ffffff;
+      background-color: #777;
+    }
+
+  }
+
+}
+
+.sidebar {
+  height: 200px;
+  width: 150px;
+  position: -webkit-sticky;
+  /* for Safari users */
+  position: sticky;
+  top: 0px;
+  float: right;
+  /* margin-top: 100px;
+    padding-top: 40px; */
+  /* background-color: lightblue; */
+}
+
+.sidebar div {
+  padding: 2px;
+  font-size: 16px;
+  display: block;
+}
+
+.body-text {
+  margin-right: 150px;
+  font-size: 18px;
+}
+
+.sidebar-background {
+  background-color: #fff;
+  /* border-radius: 10px; */
+  padding: 30px 20px;
+  box-shadow: 0px 0px 50px -30px #888;
+  border: none;
+}
+
+
+/* rating */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.rate {
+  float: left;
+  height: 46px;
+  padding: 0 10px;
+}
+
+.rate:not(:checked)>input {
+  position: absolute;
+  top: -9999px;
+}
+
+.rate:not(:checked)>label {
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 20px;
+  color: #ccc;
+}
+
+.rate:not(:checked)>label:before {
+  content: '★ ';
+}
+
+.rate>input:checked~label {
+  color: #ffc700;
+}
+
+.rate:not(:checked)>label:hover,
+.rate:not(:checked)>label:hover~label {
+  color: #deb217;
+}
+
+.rate>input:checked+label:hover,
+.rate>input:checked+label:hover~label,
+.rate>input:checked~label:hover,
+.rate>input:checked~label:hover~label,
+.rate>label:hover~input:checked~label {
+  color: #c59b08;
+}
+
+
+/* pagination */
+
+.previous-next:hover {
+  background: #2655807d;
+  color: #ccc;
+}
+
+.pagebox {
+  border: 2px solid #265580;
+  border-radius: 7px;
+}

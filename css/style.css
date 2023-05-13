@@ -1,0 +1,36 @@
+@font-face {
+  font-family: iransans;
+  src: url(fonts/IRANSansWeb\(FaNum\).woff2);
+}
+
+* {
+  direction: rtl;
+  font-size: 14px;
+  font-family: "iransans";
+  /* color: #1e1e1e; */
+}
+
+input {
+  outline: none;
+}
+
+select {
+  outline: none;
+}
+
+textarea {
+  outline: none;
+}
+
+
+.green-bg{
+
+  background-image: rgb(132,200,20);
+  background-image: -moz-radial-gradient(circle, rgba(132,200,20,0.48783263305322133) 0%, rgba(255,255,255,0.5634628851540616) 68%);
+  background-image: -webkit-radial-gradient(circle, rgba(132,200,20,0.48783263305322133) 0%, rgba(255,255,255,0.5634628851540616) 68%);
+  background-image: radial-gradient(circle, rgba(132,200,20,0.48783263305322133) 0%, rgba(255,255,255,0.5634628851540616) 68%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#84c814",endColorstr="#ffffff",GradientType=1);
+
+  height: 500px;
+  z-index: -10000;
+}

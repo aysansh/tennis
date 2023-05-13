@@ -1,0 +1,916 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./swiper-bundle.min.css">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./mag.css">
+    <link rel="stylesheet" href="./nouislider.min.css">
+
+    <title>Magazine</title>
+
+
+    <style>
+        .nav-link {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 27px;
+
+            color: #1e1e1e;
+        }
+
+        @media only screen and (max-width: 950px) {
+            .d-l-a {
+                width: 80% !important;
+            }
+        }
+
+        p {
+            line-height: 30px;
+        }
+
+        body {
+            background: rgb(195, 252, 190);
+            background: radial-gradient(circle, rgba(195, 252, 190, 1) 0%, rgba(255, 255, 255, 0) 51%);
+        }
+
+        .service>a {
+            color: black;
+            height: fit-content;
+        }
+
+        .other {
+            border-radius: none;
+            border: none;
+            background: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+
+
+
+    <section class="container mt-5">
+
+
+
+        <!-- title  -->
+        <div style=" margin: 100px 0 60px 0;position: relative; " class="d-flex justify-content-center">
+
+            <div class=" m-0 fw-bold fs-3 p-0">
+                <p class="mb-0">
+                    مجله شادا
+                </p>
+            </div>
+
+        </div>
+
+        <!-- filter offconvas  -->
+        <div class=" d-flex justify-content-center mb-5">
+
+            <div class="d-flex d-lg-none">
+
+                <button class="btn" type="button" data-bs-toggle="offcanvas" style="color: #265580;"
+                    data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+                    <div class=" d-flex align-items-center">
+                        <i class="bi bi-filter-circle-fill mx-4" style="font-size: 48px;"></i>
+                        <h2 class="m-0 fw-bold text-black-50">
+                            فیلتر
+                        </h2>
+                    </div>
+                </button>
+
+
+                <div class="offcanvas offcanvas-bottom " tabindex="-1" id="offcanvasBottom" style="height: fit-content;"
+                    aria-labelledby="offcanvasBottomLabel">
+
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                        </button>
+                    </div>
+
+                    <div class="offcanvas-body small sidebar-background mb-4 mx-2">
+
+
+                        <!-- check boxes  -->
+                        <div>
+
+                            <h1 style="margin: 1.5rem 0;font-size: 18px;">
+                                دسته بندی‌ها
+                            </h1>
+
+                            <div class="d-flex flex-wrap">
+
+                                <div class="form-check d-flex mb-3 ">
+
+                                    <input style="background-color: #78BD09;float: right;margin-right: 1rem;"
+                                        class="form-check-input ms-0 rounded-0 border-1" type="checkbox" value=""
+                                        id="flexCheckDefault">
+                                    <label class="form-check-label mx-2 " for="flexCheckDefault">
+                                        ورزشی
+                                    </label>
+
+                                </div>
+
+                                <div class="form-check d-flex mb-3 ">
+                                    <input style="background-color: #78BD09;float: right;margin-right: 1rem;"
+                                        class="form-check-input ms-0 rounded-0 border-1" type="checkbox" value=""
+                                        id="flexCheckChecked" checked>
+                                    <label class="form-check-label mx-2" for="flexCheckChecked">
+                                        سلامتی
+                                    </label>
+                                </div>
+
+                                <div class="form-check d-flex mb-3 ">
+                                    <input style="background-color: #78BD09;float: right;margin-right: 1rem;"
+                                        class="form-check-input ms-0 rounded-0 border-1" type="checkbox" value=""
+                                        id="flexCheckChecked" checked>
+                                    <label class="form-check-label mx-2" for="flexCheckChecked">
+                                        خبری
+                                    </label>
+                                </div>
+
+                                <div class="form-check d-flex mb-3 ">
+                                    <input style="background-color: #78BD09;float: right;margin-right: 1rem;"
+                                        class="form-check-input ms-0 rounded-0 border-1" type="checkbox" value=""
+                                        id="flexCheckChecked" checked>
+                                    <label class="form-check-label mx-2" for="flexCheckChecked">
+                                        رادیو
+                                    </label>
+                                </div>
+
+                            </div>
+
+                            <h1 style="margin:1.5rem 0;font-size: 18px; ">
+                                زیر دسته بندی </h1>
+                            <div class="row flex-wrap">
+
+
+                                <div class="col-6">
+                                    <div class="form-check d-flex mb-3 ">
+                                        <input style="background-color: #78BD09;float: right;margin-right: 1rem;"
+                                            class="form-check-input ms-0 rounded-0 border-1" type="checkbox" value=""
+                                            id="flexCheckDefault">
+                                        <label class="form-check-label mx-2 " for="flexCheckDefault">
+                                            قوانین تنیس </label>
+
+                                    </div>
+
+                                    <div class="form-check d-flex mb-3 ">
+                                        <input style="background-color: #78BD09;float: right;margin-right: 1rem;"
+                                            class="form-check-input ms-0 rounded-0 border-1" type="checkbox" value=""
+                                            id="flexCheckChecked" checked>
+                                        <label class="form-check-label mx-2" for="flexCheckChecked">
+                                            مسابقات تنیس
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check d-flex mb-3 ">
+                                        <input style="background-color: #78BD09;float: right;margin-right: 1rem;"
+                                            class="form-check-input ms-0 rounded-0 border-1" type="checkbox" value=""
+                                            id="flexCheckChecked" checked>
+                                        <label class="form-check-label mx-2" for="flexCheckChecked">
+                                            واژه‌نامه تنیس
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check d-flex mb-3 ">
+                                        <input style="background-color: #78BD09;float: right;margin-right: 1rem;"
+                                            class="form-check-input ms-0 rounded-0 border-1" type="checkbox" value=""
+                                            id="flexCheckChecked" checked>
+                                        <label class="form-check-label mx-2" for="flexCheckChecked">
+                                            آموزش تنیس
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-check d-flex mb-3 ">
+                                        <input style="background-color: #78BD09;float: right;margin-right: 1rem;"
+                                            class="form-check-input ms-0 rounded-0 border-1" type="checkbox" value=""
+                                            id="flexCheckChecked" checked>
+                                        <label class="form-check-label mx-2" for="flexCheckChecked">
+                                            مقالات
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check d-flex mb-3 ">
+                                        <input style="background-color: #78BD09;float: right;margin-right: 1rem;"
+                                            class="form-check-input ms-0 rounded-0 border-1" type="checkbox" value=""
+                                            id="flexCheckChecked" checked>
+                                        <label class="form-check-label mx-2" for="flexCheckChecked">
+                                            حاشیه‌ها
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check d-flex mb-3 ">
+                                        <input style="background-color: #78BD09;float: right;margin-right: 1rem;"
+                                            class="form-check-input ms-0 rounded-0 border-1" type="checkbox" value=""
+                                            id="flexCheckChecked" checked>
+                                        <label class="form-check-label mx-2" for="flexCheckChecked">
+                                            رده بندی تنیس
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        
+        <div class="row justify-content-between p-0">
+
+
+<!-- side bar(filter) -->
+            <div class=" col-lg-3 col-12 mb-2">
+
+
+                <div class="sidebar d-none d-lg-block ms-2" style="width: 100%; height: fit-content;">
+
+                    <div class="sidebar-background ">
+
+
+                        <!-- check boxes  -->
+                        <div class="me-3">
+                            <h1 style="margin: 1.5rem 0;font-size: 1.5rem; ">
+                                دسته بندی‌ها
+                            </h1>
+                            <div class="form-check">
+
+                                <input style="background-color: #78BD09;float: right;margin-right: 1rem;"
+                                    class="form-check-input ms-0 rounded-0 border-1" type="checkbox" value=""
+                                    id="flexCheckDefault">
+                                <label class="form-check-label mx-2 " for="flexCheckDefault">
+                                    ورزشی
+                                </label>
+
+                            </div>
+                            <div class="form-check">
+                                <input style="background-color: #78BD09;float: right;margin-right: 1rem;"
+                                    class="form-check-input ms-0 rounded-0 border-1" type="checkbox" value=""
+                                    id="flexCheckChecked" checked>
+                                <label class="form-check-label mx-2" for="flexCheckChecked">
+                                    سلامتی
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input style="background-color: #78BD09;float: right;margin-right: 1rem;"
+                                    class="form-check-input ms-0 rounded-0 border-1" type="checkbox" value=""
+                                    id="flexCheckChecked" checked>
+                                <label class="form-check-label mx-2" for="flexCheckChecked">
+                                    خبری
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input style="background-color: #78BD09;float: right;margin-right: 1rem;"
+                                    class="form-check-input ms-0 rounded-0 border-1" type="checkbox" value=""
+                                    id="flexCheckChecked" checked>
+                                <label class="form-check-label mx-2" for="flexCheckChecked">
+                                    رادیو
+                                </label>
+                            </div>
+
+                        </div>
+
+                        <div class="me-3">
+                            <h1 style="margin:2.5rem 0 1.5rem 0;font-size: 1.5rem; ">
+                                زیر دسته بندی </h1>
+                            <div class="form-check">
+                                <input style="background-color: #78BD09;float: right;margin-right: 1rem;"
+                                    class="form-check-input ms-0 rounded-0 border-1" type="checkbox" value=""
+                                    id="flexCheckDefault">
+                                <label class="form-check-label mx-2 " for="flexCheckDefault">
+                                    قوانین تنیس </label>
+
+                            </div>
+
+                            <div class="form-check">
+                                <input style="background-color: #78BD09;float: right;margin-right: 1rem;"
+                                    class="form-check-input ms-0 rounded-0 border-1" type="checkbox" value=""
+                                    id="flexCheckChecked" checked>
+                                <label class="form-check-label mx-2" for="flexCheckChecked">
+                                    مسابقات تنیس
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input style="background-color: #78BD09;float: right;margin-right: 1rem;"
+                                    class="form-check-input ms-0 rounded-0 border-1" type="checkbox" value=""
+                                    id="flexCheckChecked" checked>
+                                <label class="form-check-label mx-2" for="flexCheckChecked">
+                                    واژه‌نامه تنیس
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input style="background-color: #78BD09;float: right;margin-right: 1rem;"
+                                    class="form-check-input ms-0 rounded-0 border-1" type="checkbox" value=""
+                                    id="flexCheckChecked" checked>
+                                <label class="form-check-label mx-2" for="flexCheckChecked">
+                                    آموزش تنیس
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input style="background-color: #78BD09;float: right;margin-right: 1rem;"
+                                    class="form-check-input ms-0 rounded-0 border-1" type="checkbox" value=""
+                                    id="flexCheckChecked" checked>
+                                <label class="form-check-label mx-2" for="flexCheckChecked">
+                                    مقالات
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input style="background-color: #78BD09;float: right;margin-right: 1rem;"
+                                    class="form-check-input ms-0 rounded-0 border-1" type="checkbox" value=""
+                                    id="flexCheckChecked" checked>
+                                <label class="form-check-label mx-2" for="flexCheckChecked">
+                                    حاشیه‌ها
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input style="background-color: #78BD09;float: right;margin-right: 1rem;"
+                                    class="form-check-input ms-0 rounded-0 border-1" type="checkbox" value=""
+                                    id="flexCheckChecked" checked>
+                                <label class="form-check-label mx-2" for="flexCheckChecked">
+                                    رده بندی تنیس
+                                </label>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- container of cards -->
+            <div class="col-lg-9">
+                <div class="card-group row flex-wrap justify-content-center">
+
+
+
+                    <div class="col-12 col-md-6 col-lg-4  mb-5 d-flex justify-content-center">
+
+                        <div class="card articlebox" style="width: 280px;">
+
+                            <!-- main picture  -->
+                            <img src="./images/magazine/Rectangle 12.png" class="card-img-top rounded-0 w-100"
+                                alt="...">
+
+                            <div style="position: relative;">
+                                <div class="amozeshi">
+                                    <p class="mt-1">
+                                        آموزش تنیس
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- view % date -->
+                            <div style="margin-top: 10px; font-size: 14px; font-weight: 500;margin-bottom: 15px;"
+                                class="d-flex justify-content-between">
+
+                                <div class="d-flex align-items-center">
+                                    <p class="m-0"> 2535 </p>
+                                    <i class="bi bi-eye me-1" style="color: #78BD09;"></i>
+                                </div>
+
+                                <div class="d-flex align-items-center">
+                                    <p class="m-0"> 1400/05/23 </p>
+                                    <img src="./images/magazine/Vector.png"
+                                        style="width: 14px; height: 14px; margin-right: 5px; " alt="">
+                                </div>
+                            </div>
+
+                            <!-- body title  -->
+                            <div class="card-body p-0">
+                                <h5 class="card-title artile-title-text">
+                                    تیتر خبر راجب تنیس
+                                </h5>
+
+                                <!-- body text  -->
+                                <p class="card-text text-muted article-body-text">
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
+                                    گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و
+                                    برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود تنوع با هدف
+                                    بهبود.
+                                </p>
+
+                                <!-- button -->
+                                <a href="">
+                                    <div class=" py-2 addbtn">
+                                        <p class="mb-0 text-center text-white">
+                                            ادامه خبر
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 col-md-6 col-lg-4  mb-5 d-flex justify-content-center">
+                        <div class="card articlebox" style="width: 280px;">
+
+                            <!-- main picture  -->
+                            <img src="./images/magazine/Rectangle 12 (1).png" class="card-img-top rounded-0 w-100"
+                                alt="...">
+
+
+                            <div style="position: relative;">
+                                <div class="amozeshi">
+                                    <p class="mt-1 ">
+                                        آموزش تنیس
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- view % date -->
+                            <div style="margin-top: 10px; font-size: 14px; font-weight: 500;margin-bottom: 15px;"
+                                class="d-flex justify-content-between">
+
+                                <div class="d-flex align-items-center">
+                                    <p class="m-0"> 2535 </p>
+                                    <i class="bi bi-eye me-1" style="color: #78BD09;"></i>
+                                </div>
+
+                                <div class="d-flex align-items-center">
+                                    <p class="m-0"> 1400/05/23 </p>
+                                    <img src="./images/magazine/Vector.png"
+                                        style="width: 14px; height: 14px; margin-right: 5px; " alt="">
+                                </div>
+                            </div>
+
+                            <!-- body title  -->
+                            <div class="card-body p-0">
+                                <h5 class="card-title artile-title-text">
+                                    تیتر خبر راجب تنیس
+                                </h5>
+
+                                <!-- body text  -->
+                                <p class="card-text text-muted article-body-text">
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
+                                    گرافیک
+                                    است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای
+                                    شرایط
+                                    فعلی
+                                    تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود تنوع با هدف بهبود.
+                                </p>
+
+                                <!-- button -->
+                                <a href="">
+                                    <div class=" py-2 addbtn">
+                                        <p class="mb-0 text-center text-white">
+                                            ادامه خبر
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 col-md-6 col-lg-4  mb-5 d-flex justify-content-center ">
+                        <div class="card articlebox" style="width: 280px;">
+
+                            <!-- main picture  -->
+                            <img src="./images/magazine/Rectangle 12 (2).png" class="card-img-top rounded-0 w-100"
+                                alt="...">
+
+
+                            <div style="position: relative;">
+                                <div class="amozeshi">
+                                    <p class="mt-1 ">
+                                        آموزش تنیس
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- view % date -->
+                            <div style="margin-top: 10px; font-size: 14px; font-weight: 500;margin-bottom: 15px;"
+                                class="d-flex justify-content-between">
+
+                                <div class="d-flex align-items-center">
+                                    <p class="m-0"> 2535 </p>
+                                    <i class="bi bi-eye me-1" style="color: #78BD09;"></i>
+                                </div>
+
+                                <div class="d-flex align-items-center">
+                                    <p class="m-0"> 1400/05/23 </p>
+                                    <img src="./images/magazine/Vector.png"
+                                        style="width: 14px; height: 14px; margin-right: 5px; " alt="">
+                                </div>
+                            </div>
+
+                            <!-- body title  -->
+                            <div class="card-body p-0">
+                                <h5 class="card-title artile-title-text">
+                                    تیتر خبر راجب تنیس
+                                </h5>
+
+                                <!-- body text  -->
+                                <p class="card-text text-muted article-body-text">
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
+                                    گرافیک
+                                    است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای
+                                    شرایط
+                                    فعلی
+                                    تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود تنوع با هدف بهبود.
+                                </p>
+
+                                <!-- button -->
+                                <a href="">
+                                    <div class=" py-2 addbtn">
+                                        <p class="mb-0 text-center text-white">
+                                            ادامه خبر
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 col-md-6 col-lg-4  mb-5 d-flex justify-content-center ">
+                        <div class="card articlebox" style="width: 280px;">
+
+                            <!-- main picture  -->
+                            <img src="./images/magazine/Rectangle 12 (3).png" class="card-img-top rounded-0 w-100"
+                                alt="...">
+
+
+                            <div style="position: relative;">
+                                <div class="amozeshi">
+                                    <p class="mt-1 ">
+                                        آموزش تنیس
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- view % date -->
+                            <div style="margin-top: 10px; font-size: 14px; font-weight: 500;margin-bottom: 15px;"
+                                class="d-flex justify-content-between">
+
+                                <div class="d-flex align-items-center">
+                                    <p class="m-0"> 2535 </p>
+                                    <i class="bi bi-eye me-1" style="color: #78BD09;"></i>
+                                </div>
+
+                                <div class="d-flex align-items-center">
+                                    <p class="m-0"> 1400/05/23 </p>
+                                    <img src="./images/magazine/Vector.png"
+                                        style="width: 14px; height: 14px; margin-right: 5px; " alt="">
+                                </div>
+                            </div>
+
+                            <!-- body title  -->
+                            <div class="card-body p-0">
+                                <h5 class="card-title artile-title-text">
+                                    تیتر خبر راجب تنیس
+                                </h5>
+
+                                <!-- body text  -->
+                                <p class="card-text text-muted article-body-text">
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
+                                    گرافیک
+                                    است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای
+                                    شرایط
+                                    فعلی
+                                    تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود تنوع با هدف بهبود.
+                                </p>
+
+                                <!-- button -->
+                                <a href="">
+                                    <div class=" py-2 addbtn">
+                                        <p class="mb-0 text-center text-white">
+                                            ادامه خبر
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 col-md-6 col-lg-4  mb-5 d-flex justify-content-center ">
+                        <div class="card articlebox" style="width: 280px;">
+
+                            <!-- main picture  -->
+                            <img src="./images/magazine/Rectangle 12 (4).png" class="card-img-top rounded-0 w-100"
+                                alt="...">
+
+
+                            <div style="position: relative;">
+                                <div class="amozeshi">
+                                    <p class="mt-1 ">
+                                        آموزش تنیس
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- view % date -->
+                            <div style="margin-top: 10px; font-size: 14px; font-weight: 500;margin-bottom: 15px;"
+                                class="d-flex justify-content-between">
+
+                                <div class="d-flex align-items-center">
+                                    <p class="m-0"> 2535 </p>
+                                    <i class="bi bi-eye me-1" style="color: #78BD09;"></i>
+                                </div>
+
+                                <div class="d-flex align-items-center">
+                                    <p class="m-0"> 1400/05/23 </p>
+                                    <img src="./images/magazine/Vector.png"
+                                        style="width: 14px; height: 14px; margin-right: 5px; " alt="">
+                                </div>
+                            </div>
+
+                            <!-- body title  -->
+                            <div class="card-body p-0">
+                                <h5 class="card-title artile-title-text">
+                                    تیتر خبر راجب تنیس
+                                </h5>
+
+                                <!-- body text  -->
+                                <p class="card-text text-muted article-body-text">
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
+                                    گرافیک
+                                    است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای
+                                    شرایط
+                                    فعلی
+                                    تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود تنوع با هدف بهبود.
+                                </p>
+
+                                <!-- button -->
+                                <a href="">
+                                    <div class=" py-2 addbtn">
+                                        <p class="mb-0 text-center text-white">
+                                            ادامه خبر
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 col-md-6 col-lg-4  mb-5 d-flex justify-content-center ">
+                        <div class="card articlebox" style="width: 280px;">
+
+                            <!-- main picture  -->
+                            <img src="./images/magazine/Rectangle 12 (5).png" class="card-img-top rounded-0 w-100"
+                                alt="...">
+
+
+                            <div style="position: relative;">
+                                <div class="amozeshi">
+                                    <p class="mt-1 ">
+                                        آموزش تنیس
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- view % date -->
+                            <div style="margin-top: 10px; font-size: 14px; font-weight: 500;margin-bottom: 15px;"
+                                class="d-flex justify-content-between">
+
+                                <div class="d-flex align-items-center">
+                                    <p class="m-0"> 2535 </p>
+                                    <i class="bi bi-eye me-1" style="color: #78BD09;"></i>
+                                </div>
+
+                                <div class="d-flex align-items-center">
+                                    <p class="m-0"> 1400/05/23 </p>
+                                    <img src="./images/magazine/Vector.png"
+                                        style="width: 14px; height: 14px; margin-right: 5px; " alt="">
+                                </div>
+                            </div>
+
+                            <!-- body title  -->
+                            <div class="card-body p-0">
+                                <h5 class="card-title artile-title-text">
+                                    تیتر خبر راجب تنیس
+                                </h5>
+
+                                <!-- body text  -->
+                                <p class="card-text text-muted article-body-text">
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
+                                    گرافیک
+                                    است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای
+                                    شرایط
+                                    فعلی
+                                    تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود تنوع با هدف بهبود.
+                                </p>
+
+                                <!-- button -->
+                                <a href="">
+                                    <div class=" py-2 addbtn">
+                                        <p class="mb-0 text-center text-white">
+                                            ادامه خبر
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 col-md-6 col-lg-4  mb-5 d-flex justify-content-center ">
+                        <div class="card articlebox" style="width: 280px;">
+
+                            <!-- main picture  -->
+                            <img src="./images/magazine/Rectangle 12 (5).png" class="card-img-top rounded-0 w-100"
+                                alt="...">
+
+
+                            <div style="position: relative;">
+                                <div class="amozeshi">
+                                    <p class="mt-1 ">
+                                        آموزش تنیس
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- view % date -->
+                            <div style="margin-top: 10px; font-size: 14px; font-weight: 500;margin-bottom: 15px;"
+                                class="d-flex justify-content-between">
+
+                                <div class="d-flex align-items-center">
+                                    <p class="m-0"> 2535 </p>
+                                    <i class="bi bi-eye me-1" style="color: #78BD09;"></i>
+                                </div>
+
+                                <div class="d-flex align-items-center">
+                                    <p class="m-0"> 1400/05/23 </p>
+                                    <img src="./images/magazine/Vector.png"
+                                        style="width: 14px; height: 14px; margin-right: 5px; " alt="">
+                                </div>
+                            </div>
+
+                            <!-- body title  -->
+                            <div class="card-body p-0">
+                                <h5 class="card-title artile-title-text">
+                                    تیتر خبر راجب تنیس
+                                </h5>
+
+                                <!-- body text  -->
+                                <p class="card-text text-muted article-body-text">
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
+                                    گرافیک
+                                    است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای
+                                    شرایط
+                                    فعلی
+                                    تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود تنوع با هدف بهبود.
+                                </p>
+
+                                <!-- button -->
+                                <a href="">
+                                    <div class=" py-2 addbtn">
+                                        <p class="mb-0 text-center text-white">
+                                            ادامه خبر
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 col-md-6 col-lg-4  mb-5 d-flex justify-content-center ">
+                        <div class="card articlebox" style="width: 280px;">
+
+                            <!-- main picture  -->
+                            <img src="./images/magazine/Rectangle 12 (5).png" class="card-img-top rounded-0 w-100"
+                                alt="...">
+
+
+                            <div style="position: relative;">
+                                <div class="amozeshi">
+                                    <p class="mt-1 ">
+                                        آموزش تنیس
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- view % date -->
+                            <div style="margin-top: 10px; font-size: 14px; font-weight: 500;margin-bottom: 15px;"
+                                class="d-flex justify-content-between">
+
+                                <div class="d-flex align-items-center">
+                                    <p class="m-0"> 2535 </p>
+                                    <i class="bi bi-eye me-1" style="color: #78BD09;"></i>
+                                </div>
+
+                                <div class="d-flex align-items-center">
+                                    <p class="m-0"> 1400/05/23 </p>
+                                    <img src="./images/magazine/Vector.png"
+                                        style="width: 14px; height: 14px; margin-right: 5px; " alt="">
+                                </div>
+                            </div>
+
+                            <!-- body title  -->
+                            <div class="card-body p-0">
+                                <h5 class="card-title artile-title-text">
+                                    تیتر خبر راجب تنیس
+                                </h5>
+
+                                <!-- body text  -->
+                                <p class="card-text text-muted article-body-text">
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
+                                    گرافیک
+                                    است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای
+                                    شرایط
+                                    فعلی
+                                    تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود تنوع با هدف بهبود.
+                                </p>
+
+                                <!-- button -->
+                                <a href="">
+                                    <div class=" py-2 addbtn">
+                                        <p class="mb-0 text-center text-white">
+                                            ادامه خبر
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- pagination  -->
+        <div style="direction: ltr;margin: 50px 0; ">
+            <nav aria-label="Page navigation example" class="">
+                <ul class="pagination justify-content-center ">
+                    <div class="d-flex pagebox">
+                        <li class="page-item disabled">
+                            <a class="page-link text-black-50 previous-next" style=" color: #265580;"> صفحه قبل </a>
+                        </li>
+                        <li class="page-item"><a style="background-color: #265580;" class="page-link text-white-50"
+                                href="#">1</a></li>
+                        <li class="page-item"><a class="page-link text-black-50" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link text-black-50" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link text-black-50 previous-next" style=" color: #265580;" href="#"> صفحه بعد
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+
+
+    </section>
+
+
+
+
+    <script src="./bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,1536 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>تنیس</title>
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<style>
+  .nav-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 27px;
+
+    color: #1e1e1e;
+  }
+
+  @media only screen and (max-width: 950px) {
+    .d-l-a {
+      width: 80% !important;
+    }
+  }
+
+  .service>a {
+    color: black;
+    height: fit-content;
+    font-weight: bold;
+  }
+
+  .other {
+    border-radius: none;
+    border: none;
+    background: #ffffff;
+  }
+
+  a {
+    text-decoration: none;
+  }
+</style>
+
+<body>
+
+
+
+<!-- header  -->
+
+  <header>
+    <div style="position: relative; ">
+      <div class="w-100" style=" box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; height: 580px;">
+
+        <img style="z-index: -100;width: 100%; height: 100%; position: absolute;object-fit: cover;" src="./images/1.png"
+          alt="">
+
+        <nav>
+          <!-- responsive header -->
+          <div class="d-lg-none d-flex justify-content-between me-4 " style="z-index: 20000">
+            <div style="cursor: pointer;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+              aria-controls="offcanvasRight" width="42" height="42" fill="gray"
+              class="bi d-flex justify-content-between" viewBox="0 0 16 16">
+              <img src="./images/icon/icons8-menu-rounded-48.png" alt="">
+
+
+
+            </div>
+
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel"
+              style="background: #ffffff; color: white; z-index: 20000">
+              <div class="offcanvas-header">
+                <img src="./images/main/Capture-removebg-preview.png" class="img-fluid"
+                  style="width: 100px; height: 50px" />
+                <button style="opacity: 1" type="button" class="btn-close text-reset bg-white text-black"
+                  data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+
+                <form action="" style="width: 100%">
+
+                  <div class="d-flex align-items-center justify-content-end"
+                    style=" opacity: 0.8; border: 2px solid #ffffff; border-radius: 5px; width: 300px; height: 46px; position: relative;">
+
+                    <button class="bi bi-search btn border-0 bg-transparent text-white"
+                      style=" opacity: 0.5; position: absolute; right: 10px; margin-left: 20px; background-color: #ffffff; box-shadow: 0;">
+                    </button>
+
+                    <input type="text" placeholder="جستجوی محصول"
+                      style=" background-color: #ffffff; border: 0; width: 80%;  outline: none; font-size: 16px; "
+                      name="" id="" />
+
+                  </div>
+                </form>
+
+                <div class="mt-4">
+
+                  <div class="d-flex align-items-center mb-4">
+                    <img class="mx-3" src="./images/icon/icons8-home-20.png" alt="">
+                    <a href="" class="text-black-50 fw-bold">
+                      خانه
+                    </a>
+                  </div>
+                  <div class="d-flex align-items-center mb-4">
+                    <img class="mx-3" src="./images/icon/icons8-service-20.png" alt="">
+                    <a href="" class="text-black-50 fw-bold">
+                      خدمات
+                    </a>
+                  </div>
+                  <div class="d-flex align-items-center mb-4">
+                    <img class="mx-3" src="./images/icon/icons8-solid-paint-20.png" alt="">
+                    <a href="" class="text-black-50 fw-bold">
+                      نمونه کار
+                    </a>
+                  </div>
+                  <div class="d-flex align-items-center mb-4">
+                    <img class="mx-3" src="./images/icon/icons8-online-support-20.png" alt="">
+                    <a href="" class="text-black-50 fw-bold">
+                      تماس با ما
+                    </a>
+                  </div>
+                  <div class="d-flex align-items-center mb-4">
+                    <img class="mx-3" src="./images/icon/icons8-about-20.png" alt="">
+                    <a href="" class="text-black-50 fw-bold">
+                      درباره ما
+                    </a>
+                  </div>
+                  <div class="d-flex align-items-center mb-4">
+                    <img class="mx-3" src="./images/icon/icons8-blog-20.png" alt="">
+                    <a href="" class="text-black-50 fw-bold">
+                      مقالات
+                    </a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- sign up button  -->
+            <div class=" d-flex justify-content-end"
+              style="margin-left: 20px;height:60px;width: fit-content;background: rgba(150, 219, 38, 0.371);">
+
+              <!-- Button trigger modal -->
+              <button class="btn h-100 text-black text-white rounded-0" type="button" data-bs-toggle="modal"
+                data-bs-target="#exampleModal" style="padding: 0 30px;">
+                ورود و عضویت
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content rounded-0">
+                    <div class="modal-header border-0 w-50">
+
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                      <h6 class="fw-bold">
+                        ورود
+                      </h6>
+                    </div>
+                    <div class="modal-body ">
+                      <div>
+                        <div class="input-group mb-3 border" style="direction: ltr;">
+                          <button type="button" class="btn btn-outline-secondary rounded-0 border-0">+98</button>
+                          <button type="button"
+                            class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split rounded-0 border-0"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="visually-hidden">
+
+                            </span>
+                          </button>
+                          <ul class="dropdown-menu " style="min-width: fit-content;">
+                            <li><a class="dropdown-item" href="#">+94</a></li>
+                            <li><a class="dropdown-item" href="#">+95</a></li>
+                            <li><a class="dropdown-item" href="#">+96</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#">+97</a></li>
+                          </ul>
+                          <input type="text" class="form-control rounded-0  text-black-50" placeholder="000 000 0000"
+                            aria-label="Text input with segmented dropdown button">
+                        </div>
+                        <input type="text" class="form-control rounded-0  text-black-50" placeholder="رمز عبور"
+                          aria-label="Text input with segmented dropdown button">
+
+                      </div>
+
+                      <div class="d-flex justify-content-center mt-4 ">
+                        <p style="font-size: 14px;">
+                          در شادا کلاب اکانت ندارید؟
+
+                          <a href="" style="color: #78BD09;font-size: 14px;">
+                            ثبت نام
+                          </a>
+                        </p>
+                      </div>
+                      <div class="d-flex justify-content-center">
+                        <button class="btn h-100 text-black text-white rounded-0 " type="button" data-bs-toggle="modal"
+                          data-bs-target="#exampleModal" style="background: #78BD09;padding: 5px 50px;">
+                          ورود
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+
+
+          <div class=" d-none d-lg-flex" style="height: fit-content;max-width: 1500px;margin: auto;">
+
+            <div class="row w-100" style="position: relative;">
+              <!-- menu & logo -->
+              <div class="col-8">
+                <div class="row align-items-center w-100"
+                  style="box-shadow: 2px 2px 31px -22px black; background: #ffffff;position: absolute;">
+                  <!-- logo -->
+                  <div class="col-2">
+                    <img style="width: 110px;height: 60px;" src="./images/Capture-removebg-preview.png" alt="">
+
+                  </div>
+
+                  <!-- menu  -->
+                  <div class="col-10 d-flex justify-content-between">
+                    <div class="service">
+                      <a href="">
+                        خدمات
+                      </a>
+                    </div>
+                    <div class="service">
+                      <a href="">
+                        تیم آکادمی
+                      </a>
+                    </div>
+                    <div class="service">
+                      <a href="">
+                        مجله
+                      </a>
+                    </div>
+                    <div class="service">
+                      <a href="">
+                        گالری
+                      </a>
+                    </div>
+                    <div class="service">
+                      <a href="">
+                        درباره ما
+                      </a>
+                    </div>
+                    <div class="service">
+                      <div class="dropdown-center ">
+                        <a class="btn dropdown-toggle border-0 p-0 fw-bold" href="#" role="button"
+                          data-bs-toggle="dropdown" aria-expanded="false">
+                          سایر
+                        </a>
+                        <div class="dropdown-menu other rounded-0 mt-3" style=" background: transparent;">
+
+                          <a href="" class="dropdown-item other mb-2 text-center">
+
+                            تعرفه و تخفیف‌ها
+
+                          </a>
+
+                          <a href="" class="dropdown-item other mb-2 text-center">
+
+                            مسابقات
+
+                          </a>
+
+                          <a href="" class="dropdown-item other mb-2 text-center">
+
+                            باشگاه مشتریان
+
+                          </a>
+
+                          <a href="" class="dropdown-item other mb-2 text-center">
+
+                            همکاری با شادا
+
+                          </a>
+
+                          <a href="" class="dropdown-item other mb-2 text-center">
+
+                            کمپین‌های شادا
+
+                          </a>
+
+                          <a href="" class="dropdown-item other mb-2 text-center">
+
+                            مسابقات و برندگان
+
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="service">
+                      <a href="">
+                        تماس با ما
+                      </a>
+                    </div>
+
+                    <div class="service ps-4">
+                      <a href="">
+                        از کجا بخریم؟
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <!-- sign up button  -->
+            <div class="col-4 d-flex justify-content-end" style="margin-left: 60px;height:60px;">
+
+              <!-- Button trigger modal -->
+              <button class="btn h-100 text-black text-white rounded-0 fw-bold" type="button" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop" style="background: #78BD09;padding: 0 30px;">
+                ورود و عضویت
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content rounded-0">
+                    <div class="modal-header border-0 w-50">
+
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                      <h6 class="fw-bold">
+                        ورود
+                      </h6>
+                    </div>
+                    <div class="modal-body ">
+                      <div>
+                        <div class="input-group mb-3 border" style="direction: ltr;">
+                          <button type="button" class="btn btn-outline-secondary rounded-0 border-0">+98</button>
+                          <button type="button"
+                            class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split rounded-0 border-0"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="visually-hidden">
+
+                            </span>
+                          </button>
+                          <ul class="dropdown-menu " style="min-width: fit-content;">
+                            <li><a class="dropdown-item" href="#">+94</a></li>
+                            <li><a class="dropdown-item" href="#">+95</a></li>
+                            <li><a class="dropdown-item" href="#">+96</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#">+97</a></li>
+                          </ul>
+                          <input type="text" class="form-control rounded-0  text-black-50" placeholder="000 000 0000"
+                            aria-label="Text input with segmented dropdown button">
+                        </div>
+                        <input type="text" class="form-control rounded-0  text-black-50" placeholder="رمز عبور"
+                          aria-label="Text input with segmented dropdown button">
+
+                      </div>
+
+                      <div class="d-flex justify-content-center mt-4 ">
+                        <p style="font-size: 14px;">
+                          در شادا کلاب اکانت ندارید؟
+
+                          <a href="" style="color: #78BD09;font-size: 14px;">
+                            ثبت نام
+                          </a>
+                        </p>
+                      </div>
+                      <div class="d-flex justify-content-center">
+                        <button class="btn h-100 text-black text-white rounded-0 " type="button" data-bs-toggle="modal"
+                          data-bs-target="#exampleModal" style="background: #78BD09;padding: 5px 50px;">
+                          ورود
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </nav>
+
+
+
+
+        <div class="d-flex d-l-a justify-content-center flex-column mx-0"
+          style="position: relative; width: 40%; height: 268px;margin:7rem 0;">
+          <img style="position: absolute;z-index: -10;opacity: 0.6;height: 270px;width: 500px;"
+            class="img-fluid d-none d-md-flex" src="./images/main/Polygon 1.png" alt="">
+          <div style="position: absolute;right:60px;margin-top: 3rem;top: -18px ;">
+            <h1
+              style=" font-style: normal; font-weight: 700; font-size: 40px; line-height: 68px;  color: #ffffff;  opacity: 1; "
+              class="text-center">
+              باشــگاه تـنـیـس
+              <span class="d-block"
+                style=" font-style: normal; font-weight: 700; font-size: 70px;  line-height: 119px; color: #78bd09; ">شادا
+                کلاب</span>
+            </h1>
+            <div class="d-flex justify-content-center" style="opacity: 1">
+              <img src="./images/icon/bxl_telegram.png" class="mx-3" />
+              <img src="./images/icon/ic_baseline-facebook.png" class="mx-3" />
+              <img src="./images/icon/mdi_twitter.png" class="mx-3" />
+              <img src="./images/icon/ri_instagram-fill.png" class="mx-3" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div style="margin-top: -90px; height: auto">
+      <div class="w-100 d-flex justify-content-center align-items-center m-auto">
+        <div class="container d-flex justify-content-center align-items-center" style="z-index: 2000">
+          <div class="row align-items-center justify-content-around" style="width: 90%;">
+
+
+
+            <div class="col-lg-3 bg-white d-flex flex-column  align-items-center justify-content-around"
+              style="box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; width: 210px;   height: 250px; margin-bottom: 2rem; ">
+              <img src="./images/main/Ellipse 1.png " class="img-fluid" alt="" />
+              <p style="font-style: normal;font-weight: 500;font-size: 18px;text-align: center;color: #1e1e1e;">
+                تیم آکادمی
+              </p>
+            </div>
+
+
+
+            <div class="col-lg-3 bg-white d-flex flex-column align-items-center justify-content-around"
+              style="  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;  width: 210px;  height: 250px; margin-bottom: 2rem;">
+              <img src="./images/main/Ellipse 2.png" class="img-fluid" alt="" />
+              <p
+                style="  font-style: normal;  font-weight: 500;  font-size: 18px;  text-align: center;  color: #1e1e1e;">
+                تیم آکادمی
+              </p>
+            </div>
+
+
+
+            <div class="col-lg-3 bg-white d-flex flex-column align-items-center justify-content-around"
+              style="  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;  width: 210px;  height: 250px; margin-bottom: 2rem;">
+              <img src="./images/main/Ellipse 3.png " class="img-fluid" alt="" />
+              <p
+                style="  font-style: normal;  font-weight: 500;  font-size: 18px;  text-align: center;  color: #1e1e1e;">
+                تیم آکادمی
+              </p>
+            </div>
+
+
+            <div class="col-lg-3 bg-white d-flex flex-column align-items-center justify-content-around"
+              style="  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;  width: 210px;  height: 250px; margin-bottom: 2rem; ">
+              <img src="./images/main/Ellipse 17.png " class="img-fluid" alt="" />
+              <p
+                style="  font-style: normal;  font-weight: 500;  font-size: 18px;  text-align: center;  color: #1e1e1e;">
+                تیم آکادمی
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </header>
+
+<!-- 
+  <div class=" green-bg">
+  </div> -->
+
+
+  <main>
+
+
+
+      <div class="container my-5">
+        <div class="row">
+          <div class="col-lg-8">
+            <h2 class="fw-bold"
+              style="  font-weight: 500;  font-size: 24px;  line-height: 41px; text-align: right;  text-transform: uppercase; color: #000000;">
+              چرا شادا را انتخاب می‌کنیم؟
+            </h2>
+            <p
+              style="  font-weight: 400;  font-size: 16px;  line-height: 29px;  text-align: justify;  color: #1e1e1e;  opacity: 0.8; margin-left: 3rem;">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+              استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+              در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
+              نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
+              کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان
+              جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای
+              طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان
+              فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری
+              موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد
+              نیاز شامل حروفچینی اهل دنیای موجود طراحی اساسا مورد استفاده قرار
+              گیرد.
+            </p>
+            <div class="d-flex w-100 justify-content-end">
+              <a href="#"
+                style="  font-weight: 700;  font-size: 16px;  line-height: 27px;  text-align: center;  text-transform: uppercase;  text-decoration: none;  color: #265580; margin-left: 3rem;">مشاهده
+                بیشتر</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="d-flex justify-content-center">
+              <img src="./images/main/Rectangle 20.png" class="img-fluid" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="container my-5">
+        <div class="d-flex justify-content-between">
+          <div style="width: auto">
+            <p>دوره های ورزشی</p>
+          </div>
+          <div style="width:85%">
+            <img src="./images/main/Line 2.png" class="img-fluid w-100" alt="" />
+          </div>
+        </div>
+      </div>
+
+    
+
+    <!-- sports swipre  -->
+    <div class="container">
+      <div class="swiper mySwiper" style="height: fit-content">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide bg-white">
+            <div class="w-100 p-3 pb-0" style="box-shadow: 9px 7px 60px rgba(0, 0, 0, 0.1)">
+              <img class="w-100" style="height:fit-content" src="./images/main/Rectangle 12 (1).png" />
+              <h3 class="fw-bold mt-4" style="font-size: 14px">
+                دوره‌ تنیس خصوصی (10 جلسه)
+              </h3>
+              <div class="mt-4 d-flex align-items-center">
+                <img src="./images/main/Vector (5).png" />
+                <label class="me-2">استاد محمدرضا حسینی</label>
+              </div>
+              <div class="mt-4 d-flex align-items-center">
+                <img src="./images/main/Vector.png" />
+                <label class="me-2">2،350،000 تومان</label>
+              </div>
+              <div class="w-100 mt-4 d-flex justify-content-center">
+                <button
+                  style="  min-width: 103px;  min-height: 33px;  background-color: #78bd09;  border: none;  color: #ffff;">
+                  ثبت نام
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide bg-white">
+            <div class="w-100 p-3 pb-0" style="box-shadow: 9px 7px 60px rgba(0, 0, 0, 0.1)">
+              <img class="w-100" style="height:fit-content" src="./images/main/Rectangle 12 (1).png" />
+              <h3 class="fw-bold mt-4" style="font-size: 14px">
+                دوره‌ تنیس خصوصی (10 جلسه)
+              </h3>
+              <div class="mt-4 d-flex align-items-center">
+                <img src="./images/main/Vector (5).png" />
+                <label class="me-2">استاد محمدرضا حسینی</label>
+              </div>
+              <div class="mt-4 d-flex align-items-center">
+                <img src="./images/main/Vector.png" />
+                <label class="me-2">2،350،000 تومان</label>
+              </div>
+              <div class="w-100 mt-4 d-flex justify-content-center">
+                <button
+                  style="  min-width: 103px;  min-height: 33px;  background-color: #78bd09;  border: none;  color: #ffff;">
+                  ثبت نام
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide bg-white">
+            <div class="w-100 p-3 pb-0" style="box-shadow: 9px 7px 60px rgba(0, 0, 0, 0.1)">
+              <img class="w-100" style="height:fit-content" src="./images/main/Rectangle 12 (1).png" />
+              <h3 class="fw-bold mt-4" style="font-size: 14px">
+                دوره‌ تنیس خصوصی (10 جلسه)
+              </h3>
+              <div class="mt-4 d-flex align-items-center">
+                <img src="./images/main/Vector (5).png" />
+                <label class="me-2">استاد محمدرضا حسینی</label>
+              </div>
+              <div class="mt-4 d-flex align-items-center">
+                <img src="./images/main/Vector.png" />
+                <label class="me-2">2،350،000 تومان</label>
+              </div>
+              <div class="w-100 mt-4 d-flex justify-content-center">
+                <button
+                  style="  min-width: 103px;  min-height: 33px;  background-color: #78bd09;  border: none;  color: #ffff;">
+                  ثبت نام
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide bg-white">
+            <div class="w-100 p-3 pb-0" style="box-shadow: 9px 7px 60px rgba(0, 0, 0, 0.1)">
+              <img class="w-100" style="height:fit-content" src="./images/main/Rectangle 12 (1).png" />
+              <h3 class="fw-bold mt-4" style="font-size: 14px">
+                دوره‌ تنیس خصوصی (10 جلسه)
+              </h3>
+              <div class="mt-4 d-flex align-items-center">
+                <img src="./images/main/Vector (5).png" />
+                <label class="me-2">استاد محمدرضا حسینی</label>
+              </div>
+              <div class="mt-4 d-flex align-items-center">
+                <img src="./images/main/Vector.png" />
+                <label class="me-2">2،350،000 تومان</label>
+              </div>
+              <div class="w-100 mt-4 d-flex justify-content-center">
+                <button
+                  style="  min-width: 103px;  min-height: 33px;  background-color: #78bd09;  border: none;  color: #ffff;">
+                  ثبت نام
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide bg-white">
+            <div class="w-100 p-3 pb-0" style="box-shadow: 9px 7px 60px rgba(0, 0, 0, 0.1)">
+              <img class="w-100" style="height:fit-content" src="./images/main/Rectangle 12 (1).png" />
+              <h3 class="fw-bold mt-4" style="font-size: 14px">
+                دوره‌ تنیس خصوصی (10 جلسه)
+              </h3>
+              <div class="mt-4 d-flex align-items-center">
+                <img src="./images/main/Vector (5).png" />
+                <label class="me-2">استاد محمدرضا حسینی</label>
+              </div>
+              <div class="mt-4 d-flex align-items-center">
+                <img src="./images/main/Vector.png" />
+                <label class="me-2">2،350،000 تومان</label>
+              </div>
+              <div class="w-100 mt-4 d-flex justify-content-center">
+                <button
+                  style="   min-width: 103px;   min-height: 33px;   background-color: #78bd09;   border: none;   color: #ffff;">
+                  ثبت نام
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <!-- health care swiper -->
+      <div class="container my-5">
+        <div class="d-flex justify-content-between">
+          <div style="width: auto">
+            <p>
+              دوره‌های سلامتی
+            </p>
+          </div>
+          <div style="width: 85%">
+            <img src="./images/main/Line 2.png" class="img-fluid w-100" alt="" />
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="container">
+
+
+      <div class="swiper mySwiper1">
+
+
+
+        <div class="swiper-wrapper">
+
+
+          <div class="swiper-slide bg-white">
+            <div class="w-100 p-3 pb-0" style="box-shadow: 9px 7px 60px rgba(0, 0, 0, 0.1)">
+              <img class="w-100" style="height:fit-content" src="./images/main/Rectangle 12.png" />
+              <h3 class="fw-bold mt-4" style="font-size: 14px">
+                دوره‌ تنیس خصوصی (10 جلسه)
+              </h3>
+              <div class="mt-4 d-flex align-items-center">
+                <img src="./images/main/Vector (5).png" />
+                <label class="me-2">استاد محمدرضا حسینی</label>
+              </div>
+              <div class="mt-4 d-flex align-items-center">
+                <img src="./images/main/Vector.png" />
+                <label class="me-2">2،350،000 تومان</label>
+              </div>
+              <div class="w-100 mt-4 d-flex justify-content-center">
+                <button
+                  style="  min-width: 103px;   min-height: 33px;  background-color: #78bd09;  border: none;  color: #ffff; ">
+                  ثبت نام
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide bg-white">
+            <div class="w-100 p-3 pb-0" style="box-shadow: 9px 7px 60px rgba(0, 0, 0, 0.1)">
+              <img class="w-100" style="height:fit-content" src="./images/main/Rectangle 12 (1).png" />
+              <h3 class="fw-bold mt-4" style="font-size: 14px">
+                دوره‌ تنیس خصوصی (10 جلسه)
+              </h3>
+              <div class="mt-4 d-flex align-items-center">
+                <img src="./images/main/Vector (5).png" />
+                <label class="me-2">استاد محمدرضا حسینی</label>
+              </div>
+              <div class="mt-4 d-flex align-items-center">
+                <img src="./images/main/Vector.png" />
+                <label class="me-2">2،350،000 تومان</label>
+              </div>
+              <div class="w-100 mt-4 d-flex justify-content-center">
+                <button
+                  style="   min-width: 103px;  min-height: 33px;   background-color: #78bd09;   border: none;   color: #ffff;">
+                  ثبت نام
+                </button>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="swiper-slide bg-white">
+            <div class="w-100 p-3 pb-0" style="box-shadow: 9px 7px 60px rgba(0, 0, 0, 0.1)">
+              <img class="w-100" style="height:fit-content" src="./images/main/Rectangle 12 (1).png" />
+              <h3 class="fw-bold mt-4" style="font-size: 14px">
+                دوره‌ تنیس خصوصی (10 جلسه)
+              </h3>
+              <div class="mt-4 d-flex align-items-center">
+                <img src="./images/main/Vector (5).png" />
+                <label class="me-2">استاد محمدرضا حسینی</label>
+              </div>
+              <div class="mt-4 d-flex align-items-center">
+                <img src="./images/main/Vector.png" />
+                <label class="me-2">2،350،000 تومان</label>
+              </div>
+              <div class="w-100 mt-4 d-flex justify-content-center">
+                <button
+                  style="  min-width: 103px;  min-height: 33px;  background-color: #78bd09;  border: none;  color: #ffff;">
+                  ثبت نام
+                </button>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="swiper-slide bg-white">
+            <div class="w-100 p-3 pb-0" style="box-shadow: 9px 7px 60px rgba(0, 0, 0, 0.1)">
+              <img class="w-100" style="height:fit-content" src="./images/main/Rectangle 12 (1).png" />
+              <h3 class="fw-bold mt-4" style="font-size: 14px">
+                دوره‌ تنیس خصوصی (10 جلسه)
+              </h3>
+              <div class="mt-4 d-flex align-items-center">
+                <img src="./images/main/Vector (5).png" />
+                <label class="me-2">استاد محمدرضا حسینی</label>
+              </div>
+              <div class="mt-4 d-flex align-items-center">
+                <img src="./images/main/Vector.png" />
+                <label class="me-2">2،350،000 تومان</label>
+              </div>
+              <div class="w-100 mt-4 d-flex justify-content-center">
+                <button
+                  style="  min-width: 103px;  min-height: 33px;  background-color: #78bd09;  border: none;  color: #ffff;">
+                  ثبت نام
+                </button>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="swiper-slide bg-white">
+            <div class="w-100 p-3 pb-0" style="box-shadow: 9px 7px 60px rgba(0, 0, 0, 0.1)">
+              <img class="w-100" style="height:fit-content" src="./images/main/Rectangle 12 (1).png" />
+              <h3 class="fw-bold mt-4" style="font-size: 14px">
+                دوره‌ تنیس خصوصی (10 جلسه)
+              </h3>
+              <div class="mt-4 d-flex align-items-center">
+                <img src="./images/main/Vector (5).png" />
+                <label class="me-2">استاد محمدرضا حسینی</label>
+              </div>
+              <div class="mt-4 d-flex align-items-center">
+                <img src="./images/main/Vector.png" />
+                <label class="me-2">2،350،000 تومان</label>
+              </div>
+              <div class="w-100 mt-4 d-flex justify-content-center">
+                <button
+                  style="   min-width: 103px;  min-height: 33px;   background-color: #78bd09;  border: none;  color: #ffff;">
+                  ثبت نام
+                </button>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="swiper-slide bg-white">
+            <div class="w-100 p-3 pb-0" style="box-shadow: 9px 7px 60px rgba(0, 0, 0, 0.1)">
+              <img class="w-100" style="height:fit-content" src="./images/main/Rectangle 12 (1).png" />
+              <h3 class="fw-bold mt-4" style="font-size: 14px">
+                دوره‌ تنیس خصوصی (10 جلسه)
+              </h3>
+              <div class="mt-4 d-flex align-items-center">
+                <img src="./images/main/Vector (5).png" />
+                <label class="me-2">استاد محمدرضا حسینی</label>
+              </div>
+              <div class="mt-4 d-flex align-items-center">
+                <img src="./images/main/Vector.png" />
+                <label class="me-2">2،350،000 تومان</label>
+              </div>
+              <div class="w-100 mt-4 d-flex justify-content-center">
+                <button
+                  style="  min-width: 103px;  min-height: 33px;  background-color: #78bd09;  border: none;  color: #ffff;">
+                  ثبت نام
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- academy team  -->
+    <div class="container mt-5" style="max-width: 1900px; margin-top: 80px">
+      <div class="d-flex flex-column my-5 align-items-center w-100 justify-content-center">
+        <h4 class="fw-bold mt-5">تیم آکادمی</h4>
+        <div class="d-flex justify-content-center align-items-center flex-wrap my-5">
+          <div class="d-flex mx-5 flex-column justify-content-between mb-5 align-items-center">
+            <img src="./images/main/Ellipse 4.png" class="img-fluid" style="border-radius: 50%" alt="" />
+            <h6 class="fw-bold mt-3">استاد حسین یاوری</h6>
+          </div>
+          <div class="d-flex mx-5 flex-column justify-content-between mb-5 align-items-center">
+            <img src="./images/main/Ellipse 4.png" class="img-fluid" style="border-radius: 50%" alt="" />
+            <h6 class="fw-bold mt-3">استاد حسین یاوری</h6>
+          </div>
+          <div class="d-flex mx-5 flex-column justify-content-between mb-5 align-items-center">
+            <img src="./images/main/Ellipse 4.png" class="img-fluid" style="border-radius: 50%" alt="" />
+            <h6 class="fw-bold mt-3">استاد حسین یاوری</h6>
+          </div>
+          <div class="d-flex mx-5 flex-column justify-content-between mb-5 align-items-center">
+            <img src="./images/main/Ellipse 4.png" class="img-fluid" style="border-radius: 50%" alt="" />
+            <h6 class="fw-bold mt-3">استاد حسین یاوری</h6>
+          </div>
+          <div class="d-flex mx-5 flex-column justify-content-between mb-5 align-items-center">
+            <img src="./images/main/Ellipse 4.png" class="img-fluid" style="border-radius: 50%" alt="" />
+            <h6 class="fw-bold mt-3">استاد حسین یاوری</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- gallery -->
+    <div class="container">
+      <div class="d-flex flex-column align-items-center justify-content-center">
+        <h3 class="fw-bold">گالری</h3>
+        <div class="row my-5">
+          <div class="col-lg-3 d-flex justify-content-center col-md-6 col-12 my-3">
+            <img src="./images/main/Rectangle 102.png" class="img-fluid w-100" alt="" />
+          </div>
+          <div class="col-lg-3 d-flex justify-content-center col-md-6 col-12 my-3">
+            <video controls preload="metadata" height="200px" width="550px" poster="./images/main/Rectangle 102.png"
+              src="./images/video/chvrsi-dotty-ft-sep-shz-aydinone-official-video.mp4" class="img-fluid"></video>
+          </div>
+          <div class="col-lg-3 d-flex justify-content-center col-md-6 col-12 my-3">
+            <img src="./images/main/Rectangle 102.png" class="img-fluid w-100" alt="" />
+          </div>
+          <div class="col-lg-3 d-flex justify-content-center col-md-6 col-12 my-3">
+            <img src="./images/main/Rectangle 102.png" class="img-fluid w-100" alt="" />
+          </div>
+          <div class="col-lg-3 d-flex justify-content-center col-md-6 col-12 my-3">
+            <img src="./images/main/Rectangle 102.png" class="img-fluid w-100" alt="" />
+          </div>
+          <div class="col-lg-3 d-flex justify-content-center col-md-6 col-12 my-3">
+            <img src="./images/main/Rectangle 102.png" class="img-fluid w-100" alt="" />
+          </div>
+          <div class="col-lg-3 d-flex justify-content-center col-md-6 col-12 my-3">
+            <video controls height="200px" width="550px" poster="./images/main/Rectangle 102.png"
+              src="./images/video/chvrsi-dotty-ft-sep-shz-aydinone-official-video.mp4" class="img-fluid"></video>
+          </div>
+          <div class="col-lg-3 d-flex justify-content-center col-md-6 col-12 my-3">
+            <img src="./images/main/Rectangle 102.png" class="img-fluid w-100" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <!-- news (article) -->
+    <div class="container mb-5">
+      <h4 class="text-center fw-bold my-5">تازه‌های پرتال خبری شادا</h4>
+      <div class="swiper mySwiper2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide bg-white">
+            <div class="p-3 bg-white align-items-center p-1 pb-0"
+              style="box-shadow: 9px 7px 60px rgba(0, 0, 0, 0.1);width: 100%; ">
+              <div style="position: relative" class="w-100">
+                <img src="./images/main/212111.png" class="img-fluid w-100 h-100" alt="" />
+                <div class="d-flex align-items-center"
+                  style="  background: #1e1e1e;  opacity: 0.6;  position: absolute;  bottom: 0;  left: 30%;">
+                  <p class="text-white mb-0 p-2">آموزش تنیس</p>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between mt-2 w-100">
+                <div class="mt-2 d-flex align-items-center">
+
+                  2535
+                  <span class="bi bi-eye" style="color: #78bd09;margin-right: 5px;"></span>
+
+                </div>
+                <div class="mt-2 d-flex align-items-center">
+                  <label class="ms-2">1401/01/02</label>
+                  <img src="./images/main/Vector (4).png" />
+                </div>
+              </div>
+
+              <h5 class="w-100 my-2 fw-bold" style="
+                      font-size: 17px;
+                      line-height: 24px;
+
+                      text-align: right;
+
+                      color: #1e1e1e;
+                    ">
+                تیتر خبر راجب تنیس
+              </h5>
+              <p class="" style="
+                      font-weight: 400;
+                      font-size: 12px;
+                      line-height: 17px;
+                      text-align: justify;
+                      letter-spacing: 0.0168em;
+                      font-feature-settings: 'tnum' on, 'lnum' on;
+
+                      color: #1e1e1e;
+
+                      opacity: 0.9;
+                    ">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه
+                و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی
+                تکنولوژی مورد نیاز، و کاربردهای متنوع بلکه روزنامه و مجله در
+                ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی
+                مورد نیاز، و کاربردهای متنوع با هدف بهبود کاربرد و تنوع با
+                هدف بهبود.
+              </p>
+
+              <div class="w-100 d-flex justify-content-center position-relative">
+                <a href="#" class="p-2 text-center fw-bold text-decoration-none text-white" style="
+                        background-color: #265580;
+                        font-size: 14px;
+                        color: #ffffff;
+
+                        margin-bottom: 0;
+                        width: 113px;
+                        height: 33px;
+                      ">
+                  ادامه خبر
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide bg-white">
+            <div class="p-3 bg-white align-items-center p-1 pb-0" style="
+                    box-shadow: 9px 7px 60px rgba(0, 0, 0, 0.1);
+                    width: 100%;
+                  ">
+              <div style="position: relative" class="w-100">
+                <img src="./images/main/212111.png" class="img-fluid w-100 h-100" alt="" />
+                <div class="d-flex align-items-center" style="
+                        background: #1e1e1e;
+                        opacity: 0.6;
+                        position: absolute;
+                  bottom: 0;
+                        left: 30%;
+                      ">
+                  <p class="text-white mb-0 p-2">آموزش تنیس</p>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between mt-2 w-100">
+                <div class="mt-2 d-flex align-items-center">
+
+                  2535
+                  <span class="bi bi-eye" style="color: #78bd09;margin-right: 5px;"></span>
+
+                </div>
+                <div class="mt-2 d-flex align-items-center">
+                  <label class="ms-2">1401/01/02</label>
+                  <img src="./images/main/Vector (4).png" />
+                </div>
+              </div>
+
+              <h5 class="w-100 my-2 fw-bold" style="
+                      font-size: 17px;
+                      line-height: 24px;
+
+                      text-align: right;
+
+                      color: #1e1e1e;
+                    ">
+                تیتر خبر راجب تنیس
+              </h5>
+              <p class="" style="
+                      font-weight: 400;
+                      font-size: 12px;
+                      line-height: 17px;
+                      text-align: justify;
+                      letter-spacing: 0.0168em;
+                      font-feature-settings: 'tnum' on, 'lnum' on;
+
+                      color: #1e1e1e;
+
+                      opacity: 0.8;
+                    ">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه
+                و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی
+                تکنولوژی مورد نیاز، و کاربردهای متنوع بلکه روزنامه و مجله در
+                ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی
+                مورد نیاز، و کاربردهای متنوع با هدف بهبود کاربرد و تنوع با
+                هدف بهبود.
+              </p>
+
+              <div class="w-100 d-flex justify-content-center position-relative">
+                <a href="#" class="p-2 text-center fw-bold text-decoration-none text-white" style="
+                        background-color: #265580;
+                        font-size: 14px;
+                        color: #ffffff;
+
+                        margin-bottom: 0;
+                        width: 113px;
+                        height: 33px;
+                      ">
+                  ادامه خبر
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide bg-white">
+            <div class="p-3 bg-white align-items-center p-1 pb-0" style="
+                    box-shadow: 9px 7px 60px rgba(0, 0, 0, 0.1);
+                    width: 100%;
+                  ">
+              <div style="position: relative" class="w-100">
+                <img src="./images/main/212111.png" class="img-fluid w-100 h-100" alt="" />
+                <div class="d-flex align-items-center" style="
+                        background: #1e1e1e;
+                        opacity: 0.6;
+                        position: absolute;
+                  bottom: 0;
+                        left: 30%;
+                      ">
+                  <p class="text-white mb-0 p-2">آموزش تنیس</p>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between mt-2 w-100">
+                <div class="mt-2 d-flex align-items-center">
+
+                  2535
+                  <span class="bi bi-eye" style="color: #78bd09;margin-right: 5px;"></span>
+
+                </div>
+                <div class="mt-2 d-flex align-items-center">
+                  <label class="ms-2">1401/01/02</label>
+                  <img src="./images/main/Vector (4).png" />
+                </div>
+              </div>
+
+              <h5 class="w-100 my-2 fw-bold" style="
+                      font-size: 17px;
+                      line-height: 24px;
+
+                      text-align: right;
+
+                      color: #1e1e1e;
+                    ">
+                تیتر خبر راجب تنیس
+              </h5>
+              <p class="" style="
+                      font-weight: 400;
+                      font-size: 12px;
+                      line-height: 17px;
+                      text-align: justify;
+                      letter-spacing: 0.0168em;
+                      font-feature-settings: 'tnum' on, 'lnum' on;
+
+                      color: #1e1e1e;
+
+                      opacity: 0.8;
+                    ">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه
+                و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی
+                تکنولوژی مورد نیاز، و کاربردهای متنوع بلکه روزنامه و مجله در
+                ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی
+                مورد نیاز، و کاربردهای متنوع با هدف بهبود کاربرد و تنوع با
+                هدف بهبود.
+              </p>
+
+              <div class="w-100 d-flex justify-content-center position-relative">
+                <a href="#" class="p-2 text-center fw-bold text-decoration-none text-white" style="
+                        background-color: #265580;
+                        font-size: 14px;
+                        color: #ffffff;
+
+                        margin-bottom: 0;
+                        width: 113px;
+                        height: 33px;
+                      ">
+                  ادامه خبر
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide bg-white">
+            <div class="p-3 bg-white align-items-center p-1 pb-0" style="
+                    box-shadow: 9px 7px 60px rgba(0, 0, 0, 0.1);
+                    width: 100%;
+                  ">
+              <div style="position: relative" class="w-100">
+                <img src="./images/main/212111.png" class="img-fluid w-100 h-100" alt="" />
+                <div class="d-flex align-items-center" style="
+                        background: #1e1e1e;
+                        opacity: 0.6;
+                        position: absolute;
+                  bottom: 0;
+                        left: 30%;
+                      ">
+                  <p class="text-white mb-0 p-2">آموزش تنیس</p>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between mt-2 w-100">
+                <div class="mt-2 d-flex align-items-center">
+
+                  2535
+                  <span class="bi bi-eye" style="color: #78bd09;margin-right: 5px;"></span>
+
+                </div>
+                <div class="mt-2 d-flex align-items-center">
+                  <label class="ms-2">1401/01/02</label>
+                  <img src="./images/main/Vector (4).png" />
+                </div>
+              </div>
+
+              <h5 class="w-100 my-2 fw-bold" style="
+                      font-size: 17px;
+                      line-height: 24px;
+
+                      text-align: right;
+
+                      color: #1e1e1e;
+                    ">
+                تیتر خبر راجب تنیس
+              </h5>
+              <p class="" style="
+                      font-weight: 400;
+                      font-size: 12px;
+                      line-height: 17px;
+                      text-align: justify;
+                      letter-spacing: 0.0168em;
+                      font-feature-settings: 'tnum' on, 'lnum' on;
+
+                      color: #1e1e1e;
+
+                      opacity: 0.8;
+                    ">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه
+                و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی
+                تکنولوژی مورد نیاز، و کاربردهای متنوع بلکه روزنامه و مجله در
+                ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی
+                مورد نیاز، و کاربردهای متنوع با هدف بهبود کاربرد و تنوع با
+                هدف بهبود.
+              </p>
+
+              <div class="w-100 d-flex justify-content-center position-relative">
+                <a href="#" class="p-2 text-center fw-bold text-decoration-none text-white" style="
+                        background-color: #265580;
+                        font-size: 14px;
+                        color: #ffffff;
+
+                        margin-bottom: 0;
+                        width: 113px;
+                        height: 33px;
+                      ">
+                  ادامه خبر
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="swiper-slide bg-white">
+            <div class="p-3 bg-white align-items-center p-1 pb-0" style="
+                    box-shadow: 9px 7px 60px rgba(0, 0, 0, 0.1);
+                    width: 100%;
+                  ">
+              <div style="position: relative" class="w-100">
+                <img src="./images/main/212111.png" class="img-fluid w-100 h-100" alt="" />
+                <div class="d-flex align-items-center" style="
+                        background: #1e1e1e;
+                        opacity: 0.6;
+                        position: absolute;
+                  bottom: 0;
+                        left: 30%;
+                      ">
+                  <p class="text-white mb-0 p-2">آموزش تنیس</p>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between mt-2 w-100">
+                <div class="mt-2 d-flex align-items-center">
+
+                  2535
+                  <span class="bi bi-eye" style="color: #78bd09;margin-right: 5px;"></span>
+
+                </div>
+                <div class="mt-2 d-flex align-items-center">
+                  <label class="ms-2">1401/01/02</label>
+                  <img src="./images/main/Vector (4).png" />
+                </div>
+              </div>
+
+              <h5 class="w-100 my-2 fw-bold" style="
+                      font-size: 17px;
+                      line-height: 24px;
+
+                      text-align: right;
+
+                      color: #1e1e1e;
+                    ">
+                تیتر خبر راجب تنیس
+              </h5>
+              <p class="" style="
+                      font-weight: 400;
+                      font-size: 12px;
+                      line-height: 17px;
+                      text-align: justify;
+                      letter-spacing: 0.0168em;
+                      font-feature-settings: 'tnum' on, 'lnum' on;
+
+                      color: #1e1e1e;
+
+                      opacity: 0.8;
+                    ">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه
+                و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی
+                تکنولوژی مورد نیاز، و کاربردهای متنوع بلکه روزنامه و مجله در
+                ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی
+                مورد نیاز، و کاربردهای متنوع با هدف بهبود کاربرد و تنوع با
+                هدف بهبود.
+              </p>
+
+              <div class="w-100 d-flex justify-content-center position-relative">
+                <a href="#" class="p-2 text-center fw-bold text-decoration-none text-white" style="
+                        background-color: #265580;
+                        font-size: 14px;
+                        color: #ffffff;
+
+                        margin-bottom: 0;
+                        width: 113px;
+                        height: 33px;
+                      ">
+                  ادامه خبر
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+
+
+  <!-- footer   -->
+
+  <footer>
+    <div style="position:relative ;">
+      <img style="width: 100%; height: 100%;position: absolute;z-index: -10;bottom: 0;object-fit: cover;"
+        src="./images/high-angle-paddle-tennis-field 1.png" alt="">
+      <div class="container text-white">
+        <div class="row text-white justify-content-between"
+          style="padding: 3rem 0;line-height: 40px;font-size: 11px;margin:0 0.5rem;">
+          <div class="col-lg-4 p-0 mb-4">
+            <h5 class="mb-4 fw-semibold">
+              درباره ما
+            </h5>
+            <p style="text-align: justify;line-height: 25px;">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک
+              است،
+              چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی
+              تکنولوژی
+              مورد
+              نیاز، و کاربردهای متنوع با هدف بهبود کاربرد و تنوع با هدف طراحان گرافیک است، چاپگرها و متون
+              بلکه
+              روزنامه و مجله در ستون و سطرآنچنان بهبود.
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-sm-6 p-0 mb-4">
+            <h5 class="mb-4 fw-semibold">
+              دسترسی سریع
+
+            </h5>
+            <div class="mb-3 d-flex align-items-center">
+              <i class="bi bi-dot fs-1" style="color: #78BD09;"></i>
+              <a href="" class="text-white">
+                درباره ما
+              </a>
+            </div>
+
+            <div class="mb-3 d-flex align-items-center">
+              <i class="bi bi-dot fs-1" style="color: #78BD09;"></i>
+              <a href="" class="text-white">
+                تماس با ما
+              </a>
+            </div>
+
+            <div class="mb-3 d-flex align-items-center">
+              <i class="bi bi-dot fs-1" style="color: #78BD09;"></i>
+              <a href="" class="text-white">
+                قوانین و مقررات
+              </a>
+            </div>
+
+
+          </div>
+
+          <div class="col-lg-2 col-sm-6 p-0 mb-4">
+            <h5 class="mb-4 fw-semibold">
+              دسترسی سریع
+
+            </h5>
+            <div class="mb-3 d-flex align-items-center">
+              <i class="bi bi-dot fs-1" style="color: #78BD09;"></i>
+              <a href="" class="text-white">
+                درباره ما
+              </a>
+            </div>
+
+            <div class="mb-3 d-flex align-items-center">
+              <i class="bi bi-dot fs-1" style="color: #78BD09;"></i>
+              <a href="" class="text-white">
+                تماس با ما
+              </a>
+            </div>
+
+            <div class="mb-3 d-flex align-items-center">
+              <i class="bi bi-dot fs-1" style="color: #78BD09;"></i>
+              <a href="" class="text-white">
+                قوانین و مقررات
+              </a>
+            </div>
+
+
+          </div>
+
+
+          <div class="col-lg-3 p-0 mb-4">
+            <h5 class="mb-4 fw-semibold">
+              دسترسی سریع
+
+            </h5>
+
+
+            <div class="d-flex " style="width: max-content;">
+              <i class="bi bi-dot fs-1" style="color: #78BD09;"></i>
+              <p href="">
+                ایمیل: info@negaclub.ir
+              </p>
+            </div>
+
+            <div class="d-flex  " style="width: max-content;">
+              <i class="bi bi-dot fs-1" style="color: #78BD09;"></i>
+              <p href="">
+                تلفن: 026-342392311 0263423922
+              </p>
+            </div>
+
+            <div class="d-flex " style="width: max-content;">
+              <i class="bi bi-dot fs-1" style="color: #78BD09;"></i>
+              <p href="" style="font-size: 11px;">
+                آدرس: تهران، خیابان شهید بهشتی، کوچه لاله،پلاک 2
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+  <script src="./script/bootstrap.bundle.min.js"></script>
+  <script src="./script/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      breakpoints: {
+        // when window width is >= 320px
+        320: {
+          slidesPerView: 1.25,
+          spaceBetween: 20,
+        },
+        // when window width is >= 480px
+        375: {
+          slidesPerView: 1.5,
+          spaceBetween: 30,
+        },
+        // when window width is >= 640px
+        425: {
+          slidesPerView: 1.75,
+          spaceBetween: 40,
+        },
+        640: {
+          slidesPerView: 2.75,
+          spaceBetween: 40,
+        },
+        800: {
+          slidesPerView: 3.75,
+          spaceBetween: 40,
+        },
+        1100: {
+          slidesPerView: 4.75,
+          spaceBetween: 40,
+        },
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+
+
+
+  <script>
+    var swiper1 = new Swiper(".mySwiper1", {
+      breakpoints: {
+        // when window width is >= 320px
+        320: {
+          slidesPerView: 1.25,
+          spaceBetween: 20,
+        },
+        // when window width is >= 480px
+        375: {
+          slidesPerView: 1.75,
+          spaceBetween: 30,
+        },
+        // when window width is >= 640px
+        425: {
+          slidesPerView: 1.5,
+          spaceBetween: 40,
+        },
+        640: {
+          slidesPerView: 2.75,
+          spaceBetween: 40,
+        },
+        800: {
+          slidesPerView: 3.75,
+          spaceBetween: 40,
+        },
+        1100: {
+          slidesPerView: 4.75,
+          spaceBetween: 40,
+        },
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+
+
+
+  <!-- article  -->
+  <script>
+    var swiper2 = new Swiper(".mySwiper2", {
+      breakpoints: {
+        // when window width is >= 320px
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        // when window width is >= 480px
+        375: {
+          slidesPerView: 1.25,
+          spaceBetween: 20,
+        },
+        425: {
+          slidesPerView: 1.5,
+          spaceBetween: 20,
+        },
+        // when window width is >= 640px
+        640: {
+          slidesPerView: 2.25,
+          spaceBetween: 40,
+        },
+        800: {
+          slidesPerView: 3.25,
+          spaceBetween: 40,
+        },
+        1100: {
+          slidesPerView: 4.25,
+          spaceBetween: 40,
+        },
+      },
+    });
+  </script>
+
+
+
+</body>
+
+</html>

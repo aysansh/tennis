@@ -1,0 +1,753 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./galerry.css">
+
+    <title>Gallery</title>
+    <style>
+        .job-title {
+
+            color: #265580;
+            font-size: 14px;
+            font-weight: 800;
+
+        }
+
+        .nav-link {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 27px;
+
+            color: #1e1e1e;
+        }
+
+        @media only screen and (max-width: 950px) {
+            .d-l-a {
+                width: 80% !important;
+            }
+        }
+
+        .service>a {
+            color: black;
+            height: fit-content;
+        }
+
+        .other {
+            border-radius: none;
+            border: none;
+            background: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <nav>
+
+
+        <!-- responsive header -->
+        <div class="d-lg-none d-block m-4" style="z-index: 20000">
+            <div style="cursor: pointer" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight" width="42" height="42" fill="gray" class="bi" viewBox="0 0 16 16">
+                <img src="./images/icon/icons8-menu-rounded-48.png" alt="">
+            </div>
+
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel"
+                style="background: #ffffff; color: white; z-index: 20000">
+                <div class="offcanvas-header">
+                    <img src="./images/main/Capture-removebg-preview.png" class="img-fluid"
+                        style="width: 100px; height: 50px" />
+                    <button style="opacity: 1" type="button" class="btn-close text-reset bg-white text-black"
+                        data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+
+                    <form action="" style="width: 100%">
+
+                        <div class="d-flex align-items-center justify-content-end"
+                            style=" opacity: 0.8; border: 2px solid #ffffff; border-radius: 5px; width: 300px; height: 46px; position: relative;">
+
+                            <button class="bi bi-search btn border-0 bg-transparent text-white"
+                                style=" opacity: 0.5; position: absolute; right: 10px; margin-left: 20px; background-color: #ffffff; box-shadow: 0;">
+                            </button>
+
+                            <input type="text" placeholder="جستجوی محصول"
+                                style=" background-color: #ffffff; border: 0; width: 80%;  outline: none; font-size: 16px; "
+                                name="" id="" />
+
+                        </div>
+                    </form>
+
+                    <div class="mt-4">
+
+                        <div class="d-flex align-items-center mb-4">
+                            <img class="mx-3" src="./images/icon/icons8-home-20.png" alt="">
+                            <a href="" class="text-black-50 fw-bold">
+                                خانه
+                            </a>
+                        </div>
+                        <div class="d-flex align-items-center mb-4">
+                            <img class="mx-3" src="./images/icon/icons8-service-20.png" alt="">
+                            <a href="" class="text-black-50 fw-bold">
+                                خدمات
+                            </a>
+                        </div>
+                        <div class="d-flex align-items-center mb-4">
+                            <img class="mx-3" src="./images/icon/icons8-solid-paint-20.png" alt="">
+                            <a href="" class="text-black-50 fw-bold">
+                                نمونه کار
+                            </a>
+                        </div>
+                        <div class="d-flex align-items-center mb-4">
+                            <img class="mx-3" src="./images/icon/icons8-online-support-20.png" alt="">
+                            <a href="" class="text-black-50 fw-bold">
+                                تماس با ما
+                            </a>
+                        </div>
+                        <div class="d-flex align-items-center mb-4">
+                            <img class="mx-3" src="./images/icon/icons8-about-20.png" alt="">
+                            <a href="" class="text-black-50 fw-bold">
+                                درباره ما
+                            </a>
+                        </div>
+                        <div class="d-flex align-items-center mb-4">
+                            <img class="mx-3" src="./images/icon/icons8-blog-20.png" alt="">
+                            <a href="" class="text-black-50 fw-bold">
+                                مقالات
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class=" d-none d-lg-flex" style="height: fit-content;max-width: 1500px;margin: auto;">
+            <div class="row w-100">
+                <!-- menu & logo -->
+                <div class="col-8">
+                    <div class="row align-items-center" style="box-shadow: 2px 2px 31px -22px black;">
+                        <!-- logo -->
+                        <div class="col-2">
+                            <img style="width: 110px;height: 60px;" src="./images/Capture-removebg-preview.png" alt="">
+
+                        </div>
+
+                        <!-- menu  -->
+                        <div class="col-10 d-flex justify-content-between">
+                            <div class="service">
+                                <a href="">
+                                    خدمات
+                                </a>
+                            </div>
+                            <div class="service">
+                                <a href="">
+                                    تیم آکادمی
+                                </a>
+                            </div>
+                            <div class="service">
+                                <a href="">
+                                    مجله
+                                </a>
+                            </div>
+                            <div class="service">
+                                <a href="">
+                                    گالری
+                                </a>
+                            </div>
+                            <div class="service">
+                                <a href="">
+                                    درباره ما
+                                </a>
+                            </div>
+                            <div class="service">
+                                <div class="dropdown-center ">
+                                    <a class="btn dropdown-toggle border-0 p-0" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        سایر
+                                    </a>
+                                    <div class="dropdown-menu other rounded-0 mt-3" style=" background: transparent;">
+
+                                        <a href="" class="dropdown-item other mb-2 text-center">
+
+                                            تعرفه و تخفیف‌ها
+
+                                        </a>
+
+                                        <a href="" class="dropdown-item other mb-2 text-center">
+
+                                            مسابقات
+
+                                        </a>
+
+                                        <a href="" class="dropdown-item other mb-2 text-center">
+
+                                            باشگاه مشتریان
+
+                                        </a>
+
+                                        <a href="" class="dropdown-item other mb-2 text-center">
+
+                                            همکاری با شادا
+
+                                        </a>
+
+                                        <a href="" class="dropdown-item other mb-2 text-center">
+
+                                            کمپین‌های شادا
+
+                                        </a>
+
+                                        <a href="" class="dropdown-item other mb-2 text-center">
+
+                                            مسابقات و برندگان
+
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="service">
+                                <a href="">
+                                    تماس با ما
+                                </a>
+                            </div>
+
+                            <div class="service">
+                                <a href="">
+                                    از کجا بخریم؟
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- sign up button  -->
+                <div class="col-4 d-flex justify-content-end">
+
+                    <!-- Button trigger modal -->
+                    <button class="btn h-100 text-black text-white rounded-0" type="button" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal" style="background: #78BD09;">
+                        ورود و عضویت
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content rounded-0">
+                                <div class="modal-header border-0 w-50">
+
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+
+                                    <h6 class="fw-bold">
+                                        ورود
+                                    </h6>
+                                </div>
+                                <div class="modal-body ">
+                                    <div>
+                                        <div class="input-group mb-3 border" style="direction: ltr;">
+                                            <button type="button"
+                                                class="btn btn-outline-secondary rounded-0 border-0">+98</button>
+                                            <button type="button"
+                                                class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split rounded-0 border-0"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                <span class="visually-hidden">
+
+                                                </span>
+                                            </button>
+                                            <ul class="dropdown-menu " style="min-width: fit-content;">
+                                                <li><a class="dropdown-item" href="#">+94</a></li>
+                                                <li><a class="dropdown-item" href="#">+95</a></li>
+                                                <li><a class="dropdown-item" href="#">+96</a>
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">+97</a></li>
+                                            </ul>
+                                            <input type="text" class="form-control rounded-0  text-black-50"
+                                                placeholder="000 000 0000"
+                                                aria-label="Text input with segmented dropdown button">
+                                        </div>
+                                        <input type="text" class="form-control rounded-0  text-black-50"
+                                            placeholder="رمز عبور"
+                                            aria-label="Text input with segmented dropdown button">
+
+                                    </div>
+
+                                    <div class="d-flex justify-content-center mt-4 ">
+                                        <p style="font-size: 14px;">
+                                            در شادا کلاب اکانت ندارید؟
+
+                                            <a href="" style="color: #78BD09;font-size: 14px;">
+                                                ثبت نام
+                                            </a>
+                                        </p>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <button class="btn h-100 text-black text-white rounded-0 " type="button"
+                                            data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                            style="background: #78BD09;padding: 5px 50px;">
+                                            ورود
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="container mt-5">
+
+
+
+        <!-- title  -->
+        <div style=" margin: 100px 0 60px 0;position: relative; " class="d-flex justify-content-center">
+
+            <div class=" m-0 fw-bold fs-3 p-0">
+                <p class="mb-0">
+                    گالری شادا
+                </p>
+            </div>
+
+        </div>
+
+        <!-- filter offconvas  -->
+        <div class=" d-flex justify-content-center mb-5">
+
+            <div class="d-flex d-lg-none">
+
+                <button class="btn" type="button" data-bs-toggle="offcanvas" style="color: #265580;"
+                    data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+                    <div class=" d-flex align-items-center">
+                        <i class="bi bi-filter-circle-fill mx-4" style="font-size: 48px;"></i>
+                        <h2 class="m-0 fw-bold text-black-50">
+                            فیلتر
+                        </h2>
+                    </div>
+                </button>
+
+
+                <div class="offcanvas offcanvas-bottom " tabindex="-1" id="offcanvasBottom" style="height: fit-content;"
+                    aria-labelledby="offcanvasBottomLabel">
+
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                        </button>
+                    </div>
+
+                    <div class="offcanvas-body small sidebar-background mb-4 mx-2">
+
+
+                        <!-- check boxes  -->
+                        <div>
+
+                            <h1 style="margin: 1.5rem 0;font-size: 18px;">
+                                دسته بندی‌ها
+                            </h1>
+
+                            <div class="d-flex flex-wrap">
+
+                                <div class="form-check d-flex mb-3 ">
+
+                                    <input style="background-color: #78BD09;float: right;margin-right: 1rem;"
+                                        class="form-check-input ms-0 rounded-0 border-1" type="checkbox" value=""
+                                        id="flexCheckDefault">
+                                    <label class="form-check-label mx-2 " for="flexCheckDefault">
+                                        ورزشی
+                                    </label>
+
+                                </div>
+
+                                <div class="form-check d-flex mb-3 ">
+                                    <input style="background-color: #78BD09;float: right;margin-right: 1rem;"
+                                        class="form-check-input ms-0 rounded-0 border-1" type="checkbox" value=""
+                                        id="flexCheckChecked" checked>
+                                    <label class="form-check-label mx-2" for="flexCheckChecked">
+                                        سلامتی
+                                    </label>
+                                </div>
+
+                                <div class="form-check d-flex mb-3 ">
+                                    <input style="background-color: #78BD09;float: right;margin-right: 1rem;"
+                                        class="form-check-input ms-0 rounded-0 border-1" type="checkbox" value=""
+                                        id="flexCheckChecked" checked>
+                                    <label class="form-check-label mx-2" for="flexCheckChecked">
+                                        خبری
+                                    </label>
+                                </div>
+
+                                <div class="form-check d-flex mb-3 ">
+                                    <input style="background-color: #78BD09;float: right;margin-right: 1rem;"
+                                        class="form-check-input ms-0 rounded-0 border-1" type="checkbox" value=""
+                                        id="flexCheckChecked" checked>
+                                    <label class="form-check-label mx-2" for="flexCheckChecked">
+                                        رادیو
+                                    </label>
+                                </div>
+
+                            </div>
+
+                            <h1 style="margin:1.5rem 0;font-size: 18px; ">
+                                زیر دسته بندی </h1>
+                            <div class="row flex-wrap">
+
+
+                                <div class="col-6">
+                                    <div class="form-check d-flex mb-3 ">
+                                        <input style="background-color: #78BD09;float: right;margin-right: 1rem;"
+                                            class="form-check-input ms-0 rounded-0 border-1" type="checkbox" value=""
+                                            id="flexCheckDefault">
+                                        <label class="form-check-label mx-2 " for="flexCheckDefault">
+                                            قوانین تنیس </label>
+
+                                    </div>
+
+                                    <div class="form-check d-flex mb-3 ">
+                                        <input style="background-color: #78BD09;float: right;margin-right: 1rem;"
+                                            class="form-check-input ms-0 rounded-0 border-1" type="checkbox" value=""
+                                            id="flexCheckChecked" checked>
+                                        <label class="form-check-label mx-2" for="flexCheckChecked">
+                                            مسابقات تنیس
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check d-flex mb-3 ">
+                                        <input style="background-color: #78BD09;float: right;margin-right: 1rem;"
+                                            class="form-check-input ms-0 rounded-0 border-1" type="checkbox" value=""
+                                            id="flexCheckChecked" checked>
+                                        <label class="form-check-label mx-2" for="flexCheckChecked">
+                                            واژه‌نامه تنیس
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check d-flex mb-3 ">
+                                        <input style="background-color: #78BD09;float: right;margin-right: 1rem;"
+                                            class="form-check-input ms-0 rounded-0 border-1" type="checkbox" value=""
+                                            id="flexCheckChecked" checked>
+                                        <label class="form-check-label mx-2" for="flexCheckChecked">
+                                            آموزش تنیس
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-check d-flex mb-3 ">
+                                        <input style="background-color: #78BD09;float: right;margin-right: 1rem;"
+                                            class="form-check-input ms-0 rounded-0 border-1" type="checkbox" value=""
+                                            id="flexCheckChecked" checked>
+                                        <label class="form-check-label mx-2" for="flexCheckChecked">
+                                            مقالات
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check d-flex mb-3 ">
+                                        <input style="background-color: #78BD09;float: right;margin-right: 1rem;"
+                                            class="form-check-input ms-0 rounded-0 border-1" type="checkbox" value=""
+                                            id="flexCheckChecked" checked>
+                                        <label class="form-check-label mx-2" for="flexCheckChecked">
+                                            حاشیه‌ها
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check d-flex mb-3 ">
+                                        <input style="background-color: #78BD09;float: right;margin-right: 1rem;"
+                                            class="form-check-input ms-0 rounded-0 border-1" type="checkbox" value=""
+                                            id="flexCheckChecked" checked>
+                                        <label class="form-check-label mx-2" for="flexCheckChecked">
+                                            رده بندی تنیس
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- side bar(filter) -->
+        <div class="row justify-content-between p-0">
+
+
+
+            <div class=" col-lg-3 col-12 mb-2">
+
+
+                <div class="sidebar d-none d-lg-block ms-2" style="width: 100%; height: fit-content;">
+
+                    <div class="sidebar-background ">
+
+
+                        <!-- check boxes  -->
+                        <div class="me-3">
+                            <h1 style="margin: 1.5rem 0;font-size: 1.5rem; ">
+                                دسته بندی‌ها
+                            </h1>
+                            <div class="form-check">
+
+                                <input style="background-color: #78BD09;float: right;margin-right: 1rem;"
+                                    class="form-check-input ms-0 rounded-0 border-1" type="checkbox" value=""
+                                    id="flexCheckDefault">
+                                <label class="form-check-label mx-2 " for="flexCheckDefault">
+                                    فایل‌های تصویری
+                                </label>
+
+                            </div>
+                            <div class="form-check">
+                                <input style="background-color: #78BD09;float: right;margin-right: 1rem;"
+                                    class="form-check-input ms-0 rounded-0 border-1" type="checkbox" value=""
+                                    id="flexCheckChecked" checked>
+                                <label class="form-check-label mx-2" for="flexCheckChecked">
+                                    فایل‌های ویدیویی
+                                </label>
+                            </div>
+
+                        </div>
+
+                        <div class="me-3">
+                            <h1 style="margin:2.5rem 0 1.5rem 0;font-size: 1.5rem; ">
+                                زیر دسته بندی
+                            </h1>
+
+
+                            <div class="form-check">
+                                <input style="background-color: #78BD09;float: right;margin-right: 1rem;"
+                                    class="form-check-input ms-0 rounded-0 border-1" type="checkbox" value=""
+                                    id="flexCheckDefault">
+
+                                <label class="form-check-label mx-2 " for="flexCheckDefault">
+                                    آکادمی
+                                </label>
+
+                            </div>
+
+                            <div class="form-check">
+                                <input style="background-color: #78BD09;float: right;margin-right: 1rem;"
+                                    class="form-check-input ms-0 rounded-0 border-1" type="checkbox" value=""
+                                    id="flexCheckChecked" checked>
+                                <label class="form-check-label mx-2" for="flexCheckChecked">
+                                    مسابقات
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input style="background-color: #78BD09;float: right;margin-right: 1rem;"
+                                    class="form-check-input ms-0 rounded-0 border-1" type="checkbox" value=""
+                                    id="flexCheckChecked" checked>
+                                <label class="form-check-label mx-2" for="flexCheckChecked">
+                                    تنیس جهان
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input style="background-color: #78BD09;float: right;margin-right: 1rem;"
+                                    class="form-check-input ms-0 rounded-0 border-1" type="checkbox" value=""
+                                    id="flexCheckChecked" checked>
+                                <label class="form-check-label mx-2" for="flexCheckChecked">
+                                    تنیس ایران
+                                </label>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- container of cards -->
+            <div class="col-lg-9">
+                <div class="card-group row flex-wrap justify-content-center">
+
+
+
+                    <div class="col-12 col-md-6 col-lg-4  mb-4 d-flex justify-content-center">
+
+                        <div class="card articlebox" style="width: 280px;">
+
+                            <!-- main picture  -->
+                            <img src="./images/gallery/Rectangle 101.png" class="card-img-top rounded-0 w-100"
+                                alt="...">
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-12 col-md-6 col-lg-4  mb-4 d-flex justify-content-center">
+                        <div class="card articlebox" style="width: 280px;">
+
+                            <!-- main picture  -->
+                            <img src="./images/gallery/Rectangle 103.png" class="card-img-top rounded-0 w-100"
+                                alt="...">
+
+
+
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 col-md-6 col-lg-4  mb-4 d-flex justify-content-center ">
+                        <div class="card articlebox" style="width: 280px;">
+
+                            <!-- main picture  -->
+                            <img src="./images/gallery/Rectangle 105.png" class="card-img-top rounded-0 w-100"
+                                alt="...">
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 col-md-6 col-lg-4  mb-4 d-flex justify-content-center ">
+                        <div class="card articlebox" style="width: 280px;">
+
+                            <!-- main picture  -->
+                            <img src="./images/gallery/Rectangle 107.png" class="card-img-top rounded-0 w-100"
+                                alt="...">
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 col-md-6 col-lg-4  mb-4 d-flex justify-content-center ">
+                        <div class="card articlebox" style="width: 280px;">
+
+                            <!-- main picture  -->
+                            <img src="./images/gallery/Rectangle 108.png" class="card-img-top rounded-0 w-100"
+                                alt="...">
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 col-md-6 col-lg-4  mb-4 d-flex justify-content-center ">
+                        <div class="card articlebox" style="width: 280px;">
+
+                            <!-- main picture  -->
+                            <img src="./images/gallery/Rectangle 124.png" class="card-img-top rounded-0 w-100"
+                                alt="...">
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 col-md-6 col-lg-4  mb-4 d-flex justify-content-center ">
+                        <div class="card articlebox" style="width: 280px;">
+
+                            <!-- main picture  -->
+                            <img src="./images/gallery/Rectangle 125.png" class="card-img-top rounded-0 w-100"
+                                alt="...">
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 col-md-6 col-lg-4  mb-4 d-flex justify-content-center ">
+                        <div class="card articlebox" style="width: 280px;">
+
+                            <!-- main picture  -->
+                            <img src="./images/gallery/Rectangle 126.png" class="card-img-top rounded-0 w-100"
+                                alt="...">
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 col-md-6 col-lg-4  mb-4 d-flex justify-content-center ">
+                        <div class="card articlebox" style="width: 280px;">
+
+                            <!-- main picture  -->
+                            <img src="./images/gallery/Rectangle 127.png" class="card-img-top rounded-0 w-100"
+                                alt="...">
+
+
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- pagination  -->
+        <div style="direction: ltr;margin: 50px 0; ">
+            <nav aria-label="Page navigation example" class="">
+                <ul class="pagination justify-content-center ">
+                    <div class="d-flex pagebox">
+                        <li class="page-item disabled">
+                            <a class="page-link text-black-50 previous-next" style=" color: #265580;"> صفحه قبل </a>
+                        </li>
+                        <li class="page-item"><a style="background-color: #265580;" class="page-link text-white-50"
+                                href="#">1</a></li>
+                        <li class="page-item"><a class="page-link text-black-50" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link text-black-50" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link text-black-50 previous-next" style=" color: #265580;" href="#"> صفحه بعد
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+
+
+    </section>
+
+
+
+    <script>
+
+
+        var myModal = document.getElementById('myModal')
+        var myInput = document.getElementById('myInput')
+
+        myModal.addEventListener('shown.bs.modal', function () {
+            myInput.focus()
+        })
+    </script>
+
+    <script src="./bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
